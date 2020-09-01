@@ -50,7 +50,7 @@ Currently, the data is in one column, with the sample column indicating the grou
 The qcc function needs each sample to be in one row, so we will need to use the qcc.groups() function to reshape the data.
 
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_grouping.png" alt="spc grouping" width="600"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_grouping.png" alt="spc grouping" width="500"/>
 </p>
 
 Knowing the first 30 samples are “in control,” we will use this subset as calibration data from the charts.
