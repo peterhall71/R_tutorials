@@ -35,7 +35,7 @@ Here we can see there are a total of 40 samples and 200 observations.
 Therefore, a sample size of 5 was used during data collection.
  
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_load_data.png" alt="spc load data" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_load_data.png" alt="spc load data" width="600"/>
 </p>
 
 It is a good idea to check the shape of any data you are working with using a histogram or some other visual representation.
@@ -50,7 +50,7 @@ Currently, the data is in one column, with the sample column indicating the grou
 The qcc function needs each sample to be in one row, so we will need to use the qcc.groups() function to reshape the data.
 
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_grouping.png" alt="spc grouping" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_grouping.png" alt="spc grouping" width="600"/>
 </p>
 
 Knowing the first 30 samples are “in control,” we will use this subset as calibration data from the charts.
@@ -65,7 +65,7 @@ The default for qcc is nsigma= 3 , meaning ±3 standard deviations of the mean.
 However, nsigma and the confidence interval can be changed.
 
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_summary.png" alt="spc summary" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_summary.png" alt="spc summary" width="600"/>
 </p>
 
 You can see from the Xbar chart that the 30 calibration group observations are “in control.”
@@ -73,7 +73,7 @@ However, our new data is “out of control,” and our process may be experienci
 In practice, we would need to pause production, and most likely, initiate root-cause-analysis to uncover the issue.
 
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_control_chart.png" alt="spc control chart" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_control_chart.png" alt="spc control chart" width="600"/>
 </p>
 
 ### Process Capability
@@ -85,7 +85,7 @@ For our example, we can say that the client wanted piston rings with a target di
 Process capability will help us identify whether our system is capable of meeting the specified requirements.
  
  <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_capability.png" alt="spc capability" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_capability.png" alt="spc capability" width="600"/>
 </p>
 
 \*Note that the process.capability() function does not include the “newdata” argument in its analysis.
@@ -96,7 +96,7 @@ Based on the fitted distribution, we can expect over 4% of our product to be out
 Depending on the industry, this may be an acceptable scrap rate, but for most mid- to high-volume operations, the scrap cost will be too high.
 
 <p align="center">
-<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_capability_chart.png" alt="spc capability chart" width="400"/>
+<img src="https://github.com/peterhall71/R_tutorials/blob/master/images/spc_capability_chart.png" alt="spc capability chart" width="600"/>
 </p>
 
 ## The Final Word on qcc
